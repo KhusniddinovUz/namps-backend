@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import HttpResponse
+from rest_framework.views import APIView
 
-# Create your views here.
+
+class SendEmail(APIView):
+    def post(self, request, *args, **kwargs):
+        email = request.data['email']
+        return HttpResponse('Cool')

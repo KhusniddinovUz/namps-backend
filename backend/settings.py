@@ -71,6 +71,8 @@ TEMPLATES = [
     },
 ]
 
+CSRF_COOKIE_SECURE = True
+
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
